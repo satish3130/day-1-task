@@ -1,0 +1,12 @@
+HTTP 1.1
+	Features like CORS, keep alive(most important one)was introduced.
+	More focus on gzip,minifying css/Js,caching etc.
+	Initialy it uses one YCP connection.Now six TCP connections are used.
+	The flaws are HOL-Head of lone blocking.Head information is repeated with every request data.
+	Keep alive option enables reusing of the same TCP connectionfor multiple HTTP request.
+HTTP 2
+	single TCP connection.
+	HTTPS request is required.It is secured.
+	HPACK-Header data is separate from request data and can be zipped.
+	Almost all the modern web servers support this.
+	Dont worry about losing users as users using old browsers.
